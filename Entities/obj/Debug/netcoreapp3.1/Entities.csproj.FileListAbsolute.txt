@@ -1,0 +1,13 @@
+/Users/imac/Desktop/EntityF/APIProject/Entities/bin/Debug/netcoreapp3.1/Entities.deps.json
+/Users/imac/Desktop/EntityF/APIProject/Entities/bin/Debug/netcoreapp3.1/Entities.dll
+/Users/imac/Desktop/EntityF/APIProject/Entities/bin/Debug/netcoreapp3.1/Entities.pdb
+/Users/imac/Desktop/EntityF/APIProject/Entities/obj/Debug/netcoreapp3.1/Entities.csproj.AssemblyReference.cache
+/Users/imac/Desktop/EntityF/APIProject/Entities/obj/Debug/netcoreapp3.1/Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/imac/Desktop/EntityF/APIProject/Entities/obj/Debug/netcoreapp3.1/Entities.AssemblyInfoInputs.cache
+/Users/imac/Desktop/EntityF/APIProject/Entities/obj/Debug/netcoreapp3.1/Entities.AssemblyInfo.cs
+/Users/imac/Desktop/EntityF/APIProject/Entities/obj/Debug/netcoreapp3.1/Entities.csproj.CoreCompileInputs.cache
+/Users/imac/Desktop/EntityF/APIProject/Entities/obj/Debug/netcoreapp3.1/Entities.dll
+/Users/imac/Desktop/EntityF/APIProject/Entities/obj/Debug/netcoreapp3.1/Entities.pdb
+/Users/imac/Desktop/EntityF/APIProject/Entities/bin/Debug/netcoreapp3.1/Core.dll
+/Users/imac/Desktop/EntityF/APIProject/Entities/bin/Debug/netcoreapp3.1/Core.pdb
+/Users/imac/Desktop/EntityF/APIProject/Entities/obj/Debug/netcoreapp3.1/Entities.csproj.CopyComplete

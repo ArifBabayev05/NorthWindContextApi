@@ -1,0 +1,17 @@
+/Users/imac/Desktop/EntityF/APIProject/Business/bin/Debug/netcoreapp3.1/Business.deps.json
+/Users/imac/Desktop/EntityF/APIProject/Business/bin/Debug/netcoreapp3.1/Business.dll
+/Users/imac/Desktop/EntityF/APIProject/Business/bin/Debug/netcoreapp3.1/Business.pdb
+/Users/imac/Desktop/EntityF/APIProject/Business/bin/Debug/netcoreapp3.1/DataAccess.dll
+/Users/imac/Desktop/EntityF/APIProject/Business/bin/Debug/netcoreapp3.1/Entities.dll
+/Users/imac/Desktop/EntityF/APIProject/Business/bin/Debug/netcoreapp3.1/Entities.pdb
+/Users/imac/Desktop/EntityF/APIProject/Business/bin/Debug/netcoreapp3.1/DataAccess.pdb
+/Users/imac/Desktop/EntityF/APIProject/Business/obj/Debug/netcoreapp3.1/Business.csproj.AssemblyReference.cache
+/Users/imac/Desktop/EntityF/APIProject/Business/obj/Debug/netcoreapp3.1/Business.GeneratedMSBuildEditorConfig.editorconfig
+/Users/imac/Desktop/EntityF/APIProject/Business/obj/Debug/netcoreapp3.1/Business.AssemblyInfoInputs.cache
+/Users/imac/Desktop/EntityF/APIProject/Business/obj/Debug/netcoreapp3.1/Business.AssemblyInfo.cs
+/Users/imac/Desktop/EntityF/APIProject/Business/obj/Debug/netcoreapp3.1/Business.csproj.CoreCompileInputs.cache
+/Users/imac/Desktop/EntityF/APIProject/Business/obj/Debug/netcoreapp3.1/Business.csproj.CopyComplete
+/Users/imac/Desktop/EntityF/APIProject/Business/obj/Debug/netcoreapp3.1/Business.dll
+/Users/imac/Desktop/EntityF/APIProject/Business/obj/Debug/netcoreapp3.1/Business.pdb
+/Users/imac/Desktop/EntityF/APIProject/Business/bin/Debug/netcoreapp3.1/Core.dll
+/Users/imac/Desktop/EntityF/APIProject/Business/bin/Debug/netcoreapp3.1/Core.pdb

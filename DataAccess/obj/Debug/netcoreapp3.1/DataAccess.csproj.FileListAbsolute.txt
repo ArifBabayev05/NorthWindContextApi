@@ -1,0 +1,15 @@
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/bin/Debug/netcoreapp3.1/DataAccess.deps.json
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/bin/Debug/netcoreapp3.1/DataAccess.dll
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/bin/Debug/netcoreapp3.1/DataAccess.pdb
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/bin/Debug/netcoreapp3.1/Entities.dll
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/bin/Debug/netcoreapp3.1/Entities.pdb
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.csproj.AssemblyReference.cache
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.AssemblyInfoInputs.cache
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.AssemblyInfo.cs
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.csproj.CoreCompileInputs.cache
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.csproj.CopyComplete
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.dll
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.pdb
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/bin/Debug/netcoreapp3.1/Core.dll
+/Users/imac/Desktop/EntityF/APIProject/DataAccess/bin/Debug/netcoreapp3.1/Core.pdb
