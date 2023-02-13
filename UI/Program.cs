@@ -15,10 +15,20 @@ namespace UI
 		{
             ProductManager productManager = new ProductManager(new EfProductDal());
 
-            foreach (var item in productManager.GetProductDetails())
-            {
-                Console.WriteLine(item.ProductName + " / " + item.CategoryName);
+			var result = productManager.GetAll();
+
+			if (result.Success)
+			{
+                foreach (var item in result.Data)
+                {
+                    Console.WriteLine(item.ProductName);
+                }
             }
+			else
+			{
+				Console.WriteLine(result.Message);
+			}
+            
 			 
         }
 	}

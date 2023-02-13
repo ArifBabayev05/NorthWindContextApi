@@ -1,11 +1,9 @@
 ﻿using System;
 namespace Core.Utilities.Results
 {
-	public class IDataResult
+	public interface IDataResult<T> : IResult
 	{
-		public IDataResult()
-		{
-		}
+		T Data { get; }
 	}
 }
 
