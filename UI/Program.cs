@@ -19,6 +19,7 @@ namespace UI
             {
                 Console.WriteLine(item.ProductName + " / " + item.CategoryName);
             }
+			 
         }
 	}
 }
