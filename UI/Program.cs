@@ -17,7 +17,7 @@ namespace UI
 
             foreach (var item in productManager.GetProductDetails())
             {
-                Console.WriteLine(item.ProductName + " " + item.CategoryName);
+                Console.WriteLine(item.ProductName + " / " + item.CategoryName);
             }
         }
 	}
