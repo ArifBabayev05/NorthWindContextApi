@@ -1,22 +1,19 @@
-﻿<Properties StartupConfiguration="{72EA6F91-AF30-4CFC-8E00-5F1B0799238F}|Default">
-  <MonoDevelop.Ide.ItemProperties.UI PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties StartupConfiguration="{9F1F7A8A-D373-43EA-B54B-2109D5C182EC}|Default">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UI/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Business/Concrete/ProductManager.cs">
     <Files>
-      <File FileName="DataAccess/Abstract/IProductDal.cs" Line="11" Column="21" />
-      <File FileName="DataAccess/Concrete/InMemory/InMemortProductDal.cs" Line="11" Column="38" />
-      <File FileName="Entities/DTOs/ProductDetailDto.cs" Line="6" Column="15" />
-      <File FileName="DataAccess/Concrete/EntityFramework/EfProductDal.cs" Line="29" Column="40" />
-      <File FileName="Business/Abstract/IProductService.cs" Line="14" Column="44" />
-      <File FileName="Business/Concrete/ProductManager.cs" Line="37" Column="40" />
-      <File FileName="Business/Concrete/CategoryManager.cs" Line="1" Column="1" />
-      <File FileName="Business/Abstract/IOrderService.cs" Line="1" Column="1" />
-      <File FileName="Business/Abstract/ICategoryService.cs" Line="1" Column="1" />
-      <File FileName="UI/Program.cs" Line="20" Column="79" />
+      <File FileName="DataAccess/Abstract/IProductDal.cs" />
+      <File FileName="DataAccess/Concrete/InMemory/InMemortProductDal.cs" Line="48" Column="64" />
+      <File FileName="Business/Abstract/IProductService.cs" Line="15" Column="29" />
+      <File FileName="Entities/Concrete/Product.cs" Line="1" Column="1" />
+      <File FileName="Core/Utilities/Results/IDataResult.cs" Line="6" Column="18" />
+      <File FileName="Core/Utilities/Results/DataResult.cs" Line="8" Column="25" />
+      <File FileName="Business/Constants/Messages.cs" Line="9" Column="63" />
+      <File FileName="Core/Utilities/Results/SuccessDataResult.cs" Line="25" Column="6" />
+      <File FileName="Core/Utilities/Results/ErrorDataResult.cs" Line="3" Column="2" />
+      <File FileName="Core/Utilities/Results/SuccessResult.cs" Line="4" Column="40" />
+      <File FileName="UI/Program.cs" Line="24" Column="55" />
+      <File FileName="Business/Concrete/ProductManager.cs" Line="35" Column="39" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,12 +22,16 @@
             <Node name="Business" expanded="True">
               <Node name="Abstract" expanded="True" />
               <Node name="Concrete" expanded="True" />
+              <Node name="Constants" expanded="True" />
             </Node>
             <Node name="Core" expanded="True">
               <Node name="DataAccess" expanded="True">
                 <Node name="DataFramework" expanded="True" />
               </Node>
               <Node name="Entities" expanded="True" />
+              <Node name="Utilities" expanded="True">
+                <Node name="Results" expanded="True" />
+              </Node>
             </Node>
             <Node name="DataAccess" expanded="True">
               <Node name="Abstract" expanded="True" />
@@ -43,13 +44,15 @@
               <Node name="Concrete" expanded="True" />
               <Node name="DTOs" expanded="True" />
             </Node>
-            <Node name="UI" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="UI" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebAPI PreferredExecutionTarget="/Users/imac/Desktop/Google Chrome.app" FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.UI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
