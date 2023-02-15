@@ -19,6 +19,8 @@
     <None Remove="Autofac.Extras.DynamicProxy" />
     <None Remove="Autofac.Extensions.DependencyInjection" />
     <None Remove="Aspects\" />
+    <None Remove="Aspects\Autofac\" />
+    <None Remove="Aspects\Autofac\Validation\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
@@ -30,6 +32,8 @@
     <Folder Include="CrossCuttingConcerns\Validation\" />
     <Folder Include="Utilities\Interceptors\" />
     <Folder Include="Aspects\" />
+    <Folder Include="Aspects\Autofac\" />
+    <Folder Include="Aspects\Autofac\Validation\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" />
