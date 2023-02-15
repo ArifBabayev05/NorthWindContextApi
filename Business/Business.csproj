@@ -8,14 +8,24 @@
     <None Remove="Abstract\" />
     <None Remove="Concrete\" />
     <None Remove="Constants\" />
+    <None Remove="Autofac" />
+    <None Remove="Autofac.Extras.DynamicProxy" />
+    <None Remove="DependencyResolvers\" />
+    <None Remove="DependencyResolvers\AutoFac\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
     <Folder Include="Concrete\" />
     <Folder Include="Constants\" />
+    <Folder Include="DependencyResolvers\" />
+    <Folder Include="DependencyResolvers\AutoFac\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entities\Entities.csproj" />
     <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.5.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.1" />
   </ItemGroup>
 </Project>
