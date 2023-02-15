@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "o9CHAFQ241n0xzxC+DUnvjJ5N5JeCvpxagzF9vN8u7j6R15mcxVRQGcswSW/x9RULF5UBpYLrxkWTgfoaLPAZQ==",
+  "dgSpecHash": "WMBJXXONOGyPYBlLUcTOl9QeMsx3ngsaDgkSdzY52foDbISA7f9yVI7AaxyXktMJlyVS0cGrgcUg098nwfOdow==",
   "success": true,
   "projectFilePath": "/Users/imac/Desktop/EntityF/APIProject/DataAccess/DataAccess.csproj",
   "expectedPackageFiles": [
+    "/Users/imac/.nuget/packages/fluentvalidation/11.5.0/fluentvalidation.11.5.0.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",

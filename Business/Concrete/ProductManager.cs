@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
 using Entities.DTOs;
+using FluentValidation;
 
 namespace Business.Concrete
 {
@@ -24,16 +27,10 @@ namespace Business.Concrete
             //business codes
             //validation
 
+            ValidationTool.Validate(new ProductValidator(), product);
+
              _productDal.Add(product);
 
-            if (product.UnitPrice <= 0)
-            {
-                return new ErrorResult(Messages.UnitPriceInvalid);
-            }
-            if(product.ProductName.Length < 2)
-            {
-                return new ErrorResult(Messages.ProductNameInvalid);
-            }
             return new SuccessResult(Messages.ProductAdded); 
         }
 
