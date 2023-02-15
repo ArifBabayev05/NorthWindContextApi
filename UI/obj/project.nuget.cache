@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "OKB/hP4eF/AATD8/UCaTo419Rh6eG5j2OzO5tU+MYYIf0yiD7haPGuxq8x5eAatfyLMrytYF4GtexwStb8XOCA==",
+  "dgSpecHash": "oX2VFpz+Y/2FhW0O75+WXNcROJZeX4vV7vLoMooevqjdWkdsRooBpupB2BekefSGvf0qLFuRJDYFyJa2FiOmHQ==",
   "success": true,
   "projectFilePath": "/Users/imac/Desktop/EntityF/APIProject/UI/UI.csproj",
   "expectedPackageFiles": [
     "/Users/imac/.nuget/packages/autofac/6.5.0/autofac.6.5.0.nupkg.sha512",
     "/Users/imac/.nuget/packages/autofac.extras.dynamicproxy/6.0.1/autofac.extras.dynamicproxy.6.0.1.nupkg.sha512",
     "/Users/imac/.nuget/packages/castle.core/4.4.0/castle.core.4.4.0.nupkg.sha512",
+    "/Users/imac/.nuget/packages/fluentvalidation/11.5.0/fluentvalidation.11.5.0.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
