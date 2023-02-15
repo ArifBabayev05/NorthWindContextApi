@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "39vHrTL2YOpv/z3PGXfH6+OZyhPhNKkFvpALEBf7ysfAGCwAwbPzZfJACSOVSdB9hTCwk5rwKFjBaKhhVytQJQ==",
+  "dgSpecHash": "gWfccrxupqX0xbkV160heFBO8K7K0oeGNclgh49GdAqygjGqXMs6ETrJ8pESMiVYJWtyG71WFZJAuDRaK2LwlQ==",
   "success": true,
   "projectFilePath": "/Users/imac/Desktop/EntityF/APIProject/UI/UI.csproj",
   "expectedPackageFiles": [
     "/Users/imac/.nuget/packages/autofac/6.5.0/autofac.6.5.0.nupkg.sha512",
+    "/Users/imac/.nuget/packages/autofac.extensions.dependencyinjection/8.0.0/autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "/Users/imac/.nuget/packages/autofac.extras.dynamicproxy/6.0.1/autofac.extras.dynamicproxy.6.0.1.nupkg.sha512",
     "/Users/imac/.nuget/packages/castle.core/4.4.0/castle.core.4.4.0.nupkg.sha512",
     "/Users/imac/.nuget/packages/fluentvalidation/11.5.0/fluentvalidation.11.5.0.nupkg.sha512",
@@ -23,7 +24,7 @@
     "/Users/imac/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.32/microsoft.extensions.configuration.abstractions.3.1.32.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.extensions.configuration.binder/3.1.32/microsoft.extensions.configuration.binder.3.1.32.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.32/microsoft.extensions.dependencyinjection.3.1.32.nupkg.sha512",
-    "/Users/imac/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.32/microsoft.extensions.dependencyinjection.abstractions.3.1.32.nupkg.sha512",
+    "/Users/imac/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.extensions.logging/3.1.32/microsoft.extensions.logging.3.1.32.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.32/microsoft.extensions.logging.abstractions.3.1.32.nupkg.sha512",
     "/Users/imac/.nuget/packages/microsoft.extensions.options/3.1.32/microsoft.extensions.options.3.1.32.nupkg.sha512",
