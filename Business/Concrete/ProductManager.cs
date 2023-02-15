@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Business.Abstract;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -22,12 +23,13 @@ namespace Business.Concrete
             _productDal = productDal;
         }
 
+        [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {
             //business codes
-            //validation
 
-            ValidationTool.Validate(new ProductValidator(), product);
+            //validation
+            //ValidationTool.Validate(new ProductValidator(), product);
 
              _productDal.Add(product);
 
@@ -36,10 +38,6 @@ namespace Business.Concrete
 
         public IDataResult<List<Product>> GetAll()
         {
-            //if (DateTime.Now.Hour == 00)
-            //{
-            //    return new ErrorDataResult<List<Product>>(Messages.MaintanceTime);
-            //}
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(),Messages.ProductsListed);
         }
 
