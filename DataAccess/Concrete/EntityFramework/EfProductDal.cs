@@ -31,6 +31,22 @@ namespace DataAccess.Concrete.EntityFramework
                              
             }
         }
+        //public List<ProductDetailDto> GetUnitPricebyCategory()
+        //{
+        //    using(NorthwindContext context = new NorthwindContext())
+        //    {
+        //        var result = from p in context.Products
+        //                     join u in context.Categories
+        //                     on p.UnitPrice equals u.CategoryName
+        //                     select new ProductDetailDto
+        //                     {
+        //                         ProductId = p.ProductId,
+        //                         ProductName = p.ProductName,
+
+        //                     }
+        //    }
+        //    return Ok();
+        //}
     }
 }
 
