@@ -27,19 +27,6 @@ namespace Business.Concrete
 
         }
 
-        //[ValidationAspect(typeof(ProductValidator))]
-        public IResult Add(Product product)
-        {
-            //business codes
-
-            //validation
-            //ValidationTool.Validate(new ProductValidator(), product);
-
-             _productDal.Add(product);
-
-            return new SuccessResult(Messages.ProductAdded); 
-        }
-
         public IDataResult<List<Product>> GetAll()
         {
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(),Messages.ProductsListed);
@@ -63,6 +50,53 @@ namespace Business.Concrete
         public IDataResult<List<ProductDetailDto>> GetProductDetails()
         {
             return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetDetails());
+        }
+
+        [ValidationAspect(typeof(ProductValidator))]
+        public IResult Add(Product product)
+        {
+            if (CheckIfNameIsExist(product.ProductName).Success)
+            {
+                _productDal.Add(product);
+
+                return new SuccessResult(Messages.ProductAdded);
+            }
+            return new ErrorResult(Messages.NameIsAlreadyExist);
+            
+        }
+
+        [ValidationAspect(typeof(ProductValidator))]
+        public IResult Update(Product product)
+        {
+            
+
+            //business codes
+            //validation
+
+            _productDal.Add(product);
+
+            return new SuccessResult(Messages.ProductAdded);
+        }
+
+        private IResult CheckIfCategoryIsCorrect(int categoryId)
+        {
+            var result = _productDal.GetAll(p => p.CategoryId == categoryId).Count;
+            if (result >= 10)
+            {
+                return new ErrorResult(Messages.CountOfCategoryError);
+            }
+            return new SuccessResult();
+        }
+        private IResult CheckIfNameIsExist(string productName)
+        {
+            var result = _productDal.GetAll(p => p.ProductName == productName).Count;
+            if (result > 0 )
+            {
+                return new ErrorResult(Messages.NameIsAlreadyExist);
+            }
+            return new SuccessResult();
+            
+            
         }
     }
 }
