@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Business.Abstract;
 using Business.CCS;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
+using Core.Utilities.Business;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using DataAccess.Concrete.InMemory;
@@ -19,12 +21,13 @@ namespace Business.Concrete
     {
         IProductDal _productDal;
         ILogger _logger;
+        ICategoryService _categoryService;
 
-        public ProductManager(IProductDal productDal, ILogger logger)
+        public ProductManager(IProductDal productDal, ILogger logger, ICategoryService categoryService)
         {
             _productDal = productDal;
             _logger = logger;
-
+            _categoryService = categoryService;
         }
 
         public IDataResult<List<Product>> GetAll()
@@ -55,21 +58,21 @@ namespace Business.Concrete
         [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {
-            if (CheckIfNameIsExist(product.ProductName).Success)
+            IResult result = BusinessRules.Run(CheckIfNameIsExist(product.ProductName),
+                                               CheckIfCategoryIsCorrect(product.CategoryId));
+            if(result != null)
             {
-                _productDal.Add(product);
-
-                return new SuccessResult(Messages.ProductAdded);
+                return result;
             }
-            return new ErrorResult(Messages.NameIsAlreadyExist);
+            _productDal.Add(product);
+
+            return new SuccessResult(Messages.ProductAdded);
             
         }
 
         [ValidationAspect(typeof(ProductValidator))]
         public IResult Update(Product product)
         {
-            
-
             //business codes
             //validation
 
@@ -87,15 +90,23 @@ namespace Business.Concrete
             }
             return new SuccessResult();
         }
+        private IResult CheckIfCategoryIsLessThan15(int categoryId)
+        {
+            var result = _categoryService.GetAll();
+            if (result.Data.Count>15)
+            {
+                return new ErrorResult(Messages.CategoryLimitExceded);
+            }
+            return new SuccessResult();
+        }
         private IResult CheckIfNameIsExist(string productName)
         {
-            var result = _productDal.GetAll(p => p.ProductName == productName).Count;
-            if (result > 0 )
+            var result = _productDal.GetAll(p => p.ProductName == productName).Any();
+            if (result)
             {
                 return new ErrorResult(Messages.NameIsAlreadyExist);
             }
             return new SuccessResult();
-            
             
         }
     }

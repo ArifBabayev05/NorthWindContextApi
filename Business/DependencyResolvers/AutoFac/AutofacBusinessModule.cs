@@ -8,6 +8,7 @@ using Castle.DynamicProxy;
 using Core.Utilities.Interceptors;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
+using Entities.Concrete;
 
 namespace Business.DependencyResolvers.AutoFac
 {
@@ -18,7 +19,11 @@ namespace Business.DependencyResolvers.AutoFac
             // If any class wants IProductService from you, offer ProductManager to it.
             builder.RegisterType<ProductManager>().As<IProductService>().SingleInstance();
             builder.RegisterType<EfProductDal>().As<IProductDal>().SingleInstance();
+
             builder.RegisterType<FileLogger>().As<ILogger>().SingleInstance();
+
+            builder.RegisterType<CategoryManager>().As<ICategoryService>().SingleInstance();
+            builder.RegisterType<EfCategoryDal>().As<ICategoryDal>().SingleInstance();
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 

@@ -21,6 +21,8 @@
     <None Remove="Aspects\" />
     <None Remove="Aspects\Autofac\" />
     <None Remove="Aspects\Autofac\Validation\" />
+    <None Remove="Utilities\Business\" />
+    <None Remove="Entities\Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
@@ -34,6 +36,8 @@
     <Folder Include="Aspects\" />
     <Folder Include="Aspects\Autofac\" />
     <Folder Include="Aspects\Autofac\Validation\" />
+    <Folder Include="Utilities\Business\" />
+    <Folder Include="Entities\Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" />
