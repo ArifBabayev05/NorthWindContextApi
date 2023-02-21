@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Core.Utilities.Security.Encryption
@@ -7,7 +8,7 @@ namespace Core.Utilities.Security.Encryption
 	{
 		public static SecurityKey CreateSecurityKey(string securityKey)
 		{
-			return SecurityKey();
+			return new SymmetricSecurityKey(Encoding.UTF8.GetBytes(securityKey));
 		}
 	}
 }
