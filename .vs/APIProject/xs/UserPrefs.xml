@@ -1,49 +1,40 @@
-﻿<Properties StartupConfiguration="{9F1F7A8A-D373-43EA-B54B-2109D5C182EC}|Default">
+﻿<Properties StartupConfiguration="{9F1F7A8A-D373-43EA-B54B-2109D5C182EC}|Default" GitUserInfo="UsingGIT">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.UI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Core/DataAccess/DataFramework/EfEntityRepositoryBase.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataAccess/Concrete/EntityFramework/EfUserDal.cs">
     <Files>
-      <File FileName="Business/Concrete/ProductManager.cs" Line="98" Column="60" />
-      <File FileName="Core/Utilities/Business/BusinessRules.cs" Line="6" Column="15" />
+      <File FileName="Business/Concrete/ProductManager.cs" Line="59" Column="47" />
       <File FileName="Business/Concrete/CategoryManager.cs" Line="27" Column="36" />
-      <File FileName="Business/DependencyResolvers/AutoFac/AutofacBusinessModule.cs" Line="29" Column="1" />
-      <File FileName="Core/CrossCuttingConcerns/Validation/ValidationTool.cs" Line="1" Column="1" />
-      <File FileName="Core/DataAccess/DataFramework/EfEntityRepositoryBase.cs" Line="25" Column="14" />
+      <File FileName="Business/DependencyResolvers/AutoFac/AutofacBusinessModule.cs" />
+      <File FileName="Core/CrossCuttingConcerns/Validation/ValidationTool.cs" />
+      <File FileName="Business/BusinessAspects/AutoFac/SecuredOperation.cs" Line="34" Column="39" />
+      <File FileName="Business/Constants/Messages.cs" Line="14" Column="78" />
+      <File FileName="DataAccess/Abstract/IUserDal.cs" Line="14" Column="2" />
+      <File FileName="DataAccess/Concrete/EntityFramework/EfUserDal.cs" Line="6" Column="1" />
+      <File FileName="DataAccess/Concrete/EntityFramework/EfOrderDal.cs" Line="1" Column="1" />
+      <File FileName="DataAccess/Concrete/EntityFramework/EfProductDal.cs" Line="1" Column="1" />
+      <File FileName="DataAccess/Concrete/EntityFramework/NorthwindContext.cs" Line="26" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="APIProject" expanded="True">
-            <Node name="Business" expanded="True">
+            <Node name="DataAccess" expanded="True">
               <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" expanded="True" />
-              <Node name="Constants" expanded="True" />
-              <Node name="DependencyResolvers" expanded="True">
-                <Node name="AutoFac" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Core" expanded="True">
-              <Node name="CrossCuttingConcerns" expanded="True">
-                <Node name="Validation" expanded="True" />
-              </Node>
-              <Node name="DataAccess" expanded="True">
-                <Node name="DataFramework" expanded="True">
-                  <Node name="EfEntityRepositoryBase.cs" selected="True" />
+              <Node name="Concrete" expanded="True">
+                <Node name="EntityFramework" expanded="True">
+                  <Node name="EfUserDal.cs" selected="True" />
                 </Node>
               </Node>
-              <Node name="Utilities" expanded="True">
-                <Node name="BusinessEngine" expanded="True" />
-              </Node>
             </Node>
+            <Node name="WebAPI" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.WebAPI PreferredExecutionTarget="/Users/imac/Desktop/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.UI PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

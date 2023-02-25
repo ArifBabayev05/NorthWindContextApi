@@ -75,3 +75,6 @@
 /Users/imac/Desktop/EntityF/APIProject/WebAPI/bin/Debug/netcoreapp3.1/Autofac.Extras.DynamicProxy.dll
 /Users/imac/Desktop/EntityF/APIProject/WebAPI/bin/Debug/netcoreapp3.1/Castle.Core.dll
 /Users/imac/Desktop/EntityF/APIProject/WebAPI/bin/Debug/netcoreapp3.1/FluentValidation.dll
+/Users/imac/Desktop/EntityF/APIProject/WebAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Abstractions.dll
+/Users/imac/Desktop/EntityF/APIProject/WebAPI/bin/Debug/netcoreapp3.1/System.Text.Encodings.Web.dll
+/Users/imac/Desktop/EntityF/APIProject/WebAPI/bin/Debug/netcoreapp3.1/System.Text.Json.dll
