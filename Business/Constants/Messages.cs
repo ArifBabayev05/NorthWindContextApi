@@ -12,6 +12,13 @@ namespace Business.Constants
         public static string CategoryLimitExceded = "Category Limit is Excided";
         public static string CountOfCategoryError = "Max 10 product should be on 1 category";
         public static string AuthorizationDenied = "Authorization is Denied";
+        public static string UserNotFound = "User Not Found";
+        public static string PasswordError = "Invalid Password";
+        public static string UserRegistered = "User Registered";
+        public static string UserAlreadyExists = "User Already Exist";
+        public static string AccessTokenCreated = "Access Token Created";
+        public static string SuccessfulLogin = "Succesfully Login";
+
     }
 }
 
