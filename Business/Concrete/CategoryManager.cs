@@ -1,6 +1,9 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections.Generic;
 using Business.Abstract;
+using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -16,16 +19,27 @@ namespace Business.Concrete
             _categoryDal = categoryDal;
         }
 
-        IDataResult<List<Category>> ICategoryService.GetAll()
+        public IDataResult<List<Category>> GetAll()
         {
-            return new SuccessDataResult<List<Category>>(_categoryDal.GetAll());
+            return new SuccessDataResult<List<Category>>(_categoryDal.GetAll(), Messages.ProductsListed);
         }
 
         //Select * from Categories where CategoryId = 3 (categoryId)
-        IDataResult<Category> ICategoryService.GetById(int categoryId)
+        public IDataResult<Category> GetById(int categoryId)
         {
             return new SuccessDataResult<Category>(_categoryDal.Get(c => c.CategoryId == categoryId));
         }
+
+        public IResult Add(Category category)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IResult Update(Category category)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
 
