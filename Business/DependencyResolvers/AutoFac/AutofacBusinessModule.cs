@@ -10,6 +10,7 @@ using Core.Utilities.Security.JWT;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
+using Microsoft.AspNetCore.Http;
 
 namespace Business.DependencyResolvers.AutoFac
 {
@@ -29,6 +30,9 @@ namespace Business.DependencyResolvers.AutoFac
 
             builder.RegisterType<AuthManager>().As<IAuthService>();
             builder.RegisterType<JWTHelper>().As<ITokenHelper>();
+
+            //builder.RegisterType<HttpContextAccessor>().As<IHttpContextAccessor>();
+
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 
