@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using Autofac.Core;
 using Core.CrossCuttingConcerns.Caching;
 using Core.CrossCuttingConcerns.Caching.Microsoft;
@@ -15,6 +16,7 @@ namespace Core.DependencyResolver
             servicesCollection.AddMemoryCache();
             servicesCollection.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             servicesCollection.AddSingleton<ICacheManager, MemoryCacheManager>();
+            servicesCollection.AddSingleton<Stopwatch>();
         }
 
         
