@@ -30,6 +30,8 @@
     <None Remove="Extensions\" />
     <None Remove="Utilities\IoC\" />
     <None Remove="DependencyResolver\" />
+    <None Remove="CrossCuttingConcerns\Caching\" />
+    <None Remove="CrossCuttingConcerns\Caching\Microsoft\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
@@ -51,6 +53,8 @@
     <Folder Include="Extensions\" />
     <Folder Include="Utilities\IoC\" />
     <Folder Include="DependencyResolver\" />
+    <Folder Include="CrossCuttingConcerns\Caching\" />
+    <Folder Include="CrossCuttingConcerns\Caching\Microsoft\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" />
