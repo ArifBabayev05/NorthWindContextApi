@@ -46,6 +46,7 @@ namespace Business.Concrete
         }
 
         [CacheAspects]
+        [PerformanceAspect(5)]
         public IDataResult<Product> GetById(int productId)
         {
             return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductId == productId));
