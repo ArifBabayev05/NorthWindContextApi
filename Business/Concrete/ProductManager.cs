@@ -6,6 +6,7 @@ using Business.BusinessAspects.AutoFac;
 using Business.CCS;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Caching;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Business;
@@ -31,6 +32,7 @@ namespace Business.Concrete
             _categoryService = categoryService;
         }
 
+        [CacheAspects]
         public IDataResult<List<Product>> GetAll()
         {
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(),Messages.ProductsListed);
@@ -41,6 +43,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(p=>p.CategoryId == id));
         }
 
+        [CacheAspects]
         public IDataResult<Product> GetById(int productId)
         {
             return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductId == productId));
@@ -58,6 +61,7 @@ namespace Business.Concrete
 
         [SecuredOperation("product.add,admin")]
         [ValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspects("IProductService.Get")]
         public IResult Add(Product product)
         {
             IResult result = BusinessRules.Run(CheckIfNameIsExist(product.ProductName),
@@ -74,12 +78,10 @@ namespace Business.Concrete
 
         //[SecuredOperations]
         [ValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspects("IProductService.Get")]
         public IResult Update(Product product)
         {
-            //business codes
-            //validation
-
-            _productDal.Add(product);
+            var result = _productDal.GetAll(p => p.CategoryId == product.CategoryId);
 
             return new SuccessResult(Messages.ProductAdded);
         }
