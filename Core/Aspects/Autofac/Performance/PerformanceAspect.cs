@@ -18,7 +18,6 @@ namespace Core.Aspects.Autofac.Performance
             _stopwatch = ServiceTool.ServiceProvider.GetService<Stopwatch>();
         }
 
-
         protected override void OnBefore(IInvocation invocation)
         {
             _stopwatch.Start();
