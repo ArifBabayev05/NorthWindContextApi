@@ -1,46 +1,43 @@
-﻿<Properties StartupConfiguration="{9F1F7A8A-D373-43EA-B54B-2109D5C182EC}|Default" GitUserInfo="UsingGIT">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.UI PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{9F1F7A8A-D373-43EA-B54B-2109D5C182EC}|Default">
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Business/Concrete/CategoryManager.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebAPI/Controllers/ProductController.cs">
     <Files>
-      <File FileName="DataAccess/Concrete/EntityFramework/NorthwindContext.cs" Line="1" Column="1" />
-      <File FileName="DataAccess/Concrete/EntityFramework/EfUserDal.cs" Line="12" Column="40" />
-      <File FileName="Business/Abstract/IAuthService.cs" Line="14" Column="41" />
-      <File FileName="Entities/DTOs/UserForRegisterDto.cs" Line="8" Column="18" />
-      <File FileName="Entities/DTOs/UserForLoginDto.cs" Line="8" Column="38" />
-      <File FileName="Core/Entities/IDto.cs" Line="8" Column="1" />
-      <File FileName="Business/Concrete/UserManager.cs" Line="11" Column="38" />
-      <File FileName="Business/Concrete/AuthManager.cs" Line="71" Column="95" />
-      <File FileName="Business/Constants/Messages.cs" Line="15" Column="62" />
-      <File FileName="WebAPI/Controllers/AuthController.cs" Line="35" Column="14" />
-      <File FileName="WebAPI/Controllers/ProductController.cs" Line="17" Column="1" />
-      <File FileName="WebAPI/Controllers/CategoryController.cs" Line="22" Column="1" />
-      <File FileName="Business/Abstract/IProductService.cs" Line="17" Column="5" />
-      <File FileName="Business/Concrete/CategoryManager.cs" Line="33" Column="26" />
-      <File FileName="Business/Concrete/ProductManager.cs" Line="26" Column="1" />
-      <File FileName="Business/CCS/DatabaseLogger.cs" Line="1" Column="1" />
-      <File FileName="Business/CCS/FileLogger.cs" Line="1" Column="1" />
-      <File FileName="Business/CCS/ILogger.cs" Line="1" Column="1" />
-      <File FileName="Business/BusinessAspects/AutoFac/SecuredOperation.cs" Line="35" Column="10" />
-      <File FileName="Entities/DTOs/ProductDetailDto.cs" Line="1" Column="1" />
-      <File FileName="Entities/Concrete/Category.cs" Line="1" Column="1" />
-      <File FileName="Entities/Concrete/Customer.cs" Line="1" Column="1" />
-      <File FileName="WebAPI/Startup.cs" Line="36" Column="10" />
-      <File FileName="Entities/Concrete/Product.cs" Line="1" Column="1" />
-      <File FileName="Core/DataAccess/DataFramework/EfEntityRepositoryBase.cs" Line="10" Column="15" />
-      <File FileName="Core/Utilities/Results/SuccessDataResult.cs" Line="1" Column="1" />
-      <File FileName="Core/Utilities/IoC/ServiceTool.cs" Line="15" Column="29" />
-      <File FileName="Core/Utilities/Interceptors/MethodInterception.cs" Line="9" Column="48" />
-      <File FileName="Core/Entities/Concrete/UserOperationClaim.cs" Line="1" Column="1" />
-      <File FileName="Core/Entities/Concrete/OperationClaim.cs" Line="1" Column="1" />
-      <File FileName="Core/DataAccess/IEntityRepository.cs" Line="18" Column="31" />
-      <File FileName="Core/Utilities/Interceptors/AspectInterceptorSelector.cs" Line="14" Column="1" />
-      <File FileName="Business/Abstract/ICategoryService.cs" Line="10" Column="31" />
+      <File FileName="DataAccess/Concrete/EntityFramework/NorthwindContext.cs" />
+      <File FileName="DataAccess/Concrete/EntityFramework/EfUserDal.cs" />
+      <File FileName="Business/Abstract/IAuthService.cs" />
+      <File FileName="Entities/DTOs/UserForRegisterDto.cs" />
+      <File FileName="Entities/DTOs/UserForLoginDto.cs" />
+      <File FileName="Core/Entities/IDto.cs" />
+      <File FileName="Business/Concrete/UserManager.cs" />
+      <File FileName="Business/Concrete/AuthManager.cs" />
+      <File FileName="Business/Constants/Messages.cs" />
+      <File FileName="WebAPI/Controllers/AuthController.cs" />
+      <File FileName="WebAPI/Controllers/ProductController.cs" Line="37" Column="33" />
+      <File FileName="WebAPI/Controllers/CategoryController.cs" />
+      <File FileName="Business/Abstract/IProductService.cs" />
+      <File FileName="Business/Concrete/CategoryManager.cs" Line="35" Column="23" />
+      <File FileName="Business/Concrete/ProductManager.cs" />
+      <File FileName="Business/CCS/DatabaseLogger.cs" />
+      <File FileName="Business/CCS/FileLogger.cs" />
+      <File FileName="Business/CCS/ILogger.cs" />
+      <File FileName="Business/BusinessAspects/AutoFac/SecuredOperation.cs" />
+      <File FileName="Entities/DTOs/ProductDetailDto.cs" />
+      <File FileName="Entities/Concrete/Category.cs" />
+      <File FileName="Entities/Concrete/Customer.cs" />
+      <File FileName="WebAPI/Startup.cs" />
+      <File FileName="Entities/Concrete/Product.cs" />
+      <File FileName="Core/DataAccess/DataFramework/EfEntityRepositoryBase.cs" />
+      <File FileName="Core/Utilities/Results/SuccessDataResult.cs" />
+      <File FileName="Core/Utilities/IoC/ServiceTool.cs" />
+      <File FileName="Core/Utilities/Interceptors/MethodInterception.cs" />
+      <File FileName="Core/Entities/Concrete/UserOperationClaim.cs" />
+      <File FileName="Core/Entities/Concrete/OperationClaim.cs" />
+      <File FileName="Core/DataAccess/IEntityRepository.cs" />
+      <File FileName="Core/Utilities/Interceptors/AspectInterceptorSelector.cs" />
+      <File FileName="Business/Abstract/ICategoryService.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -48,9 +45,7 @@
           <Node name="APIProject" expanded="True">
             <Node name="Business" expanded="True">
               <Node name="Abstract" expanded="True" />
-              <Node name="Concrete" expanded="True">
-                <Node name="CategoryManager.cs" selected="True" />
-              </Node>
+              <Node name="Concrete" expanded="True" />
               <Node name="Constants" expanded="True" />
               <Node name="DependencyResolvers" expanded="True">
                 <Node name="AutoFac" expanded="True" />
@@ -80,12 +75,17 @@
               <Node name="DTOs" expanded="True" />
             </Node>
             <Node name="WebAPI" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ProductController.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UI PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.WebAPI PreferredExecutionTarget="/Users/imac/Desktop/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
